@@ -1,0 +1,106 @@
+/* Write your code here. */
+
+.main-container {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 5%;
+  font-family: 'Roboto';
+}
+
+@media screen and (min-width: 992px) {
+  .main-container {
+    flex-direction: row;
+  }
+}
+
+.text-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  width: 100%;
+  order: 2;
+}
+
+@media screen and (min-width: 992px) {
+  .text-card {
+    order: 0;
+    width: 80%;
+    padding: 30px;
+  }
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .heading {
+    font-size: 42px;
+  }
+}
+
+.input-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.label-ele {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.img-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  order: 1;
+}
+
+.image {
+  width: 100%;
+}
+
+.input-field {
+  border: 1px solid white;
+  border-radius: 3px;
+  background-color: transparent;
+  color: white;
+  width: 300px;
+  height: 28px;
+  padding: 5px 0;
+}
+
+::placeholder {
+  padding-left: 7px;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.para {
+  background-color: #e4e7eb;
+  padding: 13px 28px;
+  color: #219a6f;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 7px;
+  /* margin-top: 15px; */
+}
+
+@media screen and (min-width: 992px) {
+  .para {
+    font-size: 22px;
+    padding: 13px 35px;
+  }
+}
